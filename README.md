@@ -12,7 +12,7 @@ I will continue making the fine tuning when get a better GPU jaja.
 
 Get the base model and the fine tuned model
 
-```
+```python
 from peft import PeftModel
 from transformers import LLaMATokenizer, LLaMAForCausalLM, GenerationConfig
 
@@ -28,7 +28,7 @@ model = PeftModel.from_pretrained(model, "Yairama/alpaca-miner")
 
 
 Making Predictions
-```
+```python
 # Generate responses
 def generate(instruction, input=None):
     if input:
