@@ -57,23 +57,13 @@ def generate(instruction, input=None):
         generation_config=GenerationConfig(temperature=0.2, top_p=0.75, num_beams=4),
         return_dict_in_generate=True,
         output_scores=True,
-        max_new_tokens=256
+        max_new_tokens=512
     )
     for seq in generation_output.sequences:
         output = tokenizer.decode(seq)
         print(output.split("### Response:")[1].strip())
 
-generate("Escribe un correo electrónico dando la bienvenida a un nuevo empleado llamado Manolo.")
-# Estimado Manolo,
-#
-# ¡Bienvenido a nuestro equipo! Estamos muy contentos de que hayas decidido unirse a nosotros y estamos ansiosos por comenzar a trabajar juntos. 
-#
-# Nos gustaría darte las gracias por tu interés en nuestro equipo y esperamos que tengas un gran tiempo aquí. 
-#
-# Si tienes alguna pregunta o duda, no dudes en contactarnos. 
-#
-# Atentamente, 
-# Equipo de [Nombre del Departamento]
+generate("What is mining?")
 
 ```
 
