@@ -14,11 +14,11 @@ Get the base model and the fine tuned model
 
 ```python
 from peft import PeftModel
-from transformers import LLaMATokenizer, LLaMAForCausalLM, GenerationConfig
+from transformers import LlamaTokenizer, LlamaForCausalLM, GenerationConfig
 
 base_model = "decapoda-research/llama-7b-hf"
-tokenizer = LLaMATokenizer.from_pretrained(base_model)
-model = LLaMAForCausalLM.from_pretrained(
+tokenizer = LlamaTokenizer.from_pretrained(base_model)
+model = LlamaForCausalLM.from_pretrained(
     base_model,
     load_in_8bit=True,
     device_map="auto",
