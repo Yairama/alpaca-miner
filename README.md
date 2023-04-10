@@ -79,6 +79,6 @@ generate("Escribe un correo electrónico dando la bienvenida a un nuevo empleado
 
 
 Special thanks to:
-![Spanish alpaca lora examples](https://huggingface.co/bertin-project/bertin-alpaca-lora-7b)
-![Venelin Valkov tutorial](https://www.youtube.com/watch?v=4-Q50fmq7Uwc)
+[Spanish alpaca lora examples](https://huggingface.co/bertin-project/bertin-alpaca-lora-7b)
+[Venelin Valkov tutorial](https://www.youtube.com/watch?v=4-Q50fmq7Uwc)
 
