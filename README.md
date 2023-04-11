@@ -57,14 +57,19 @@ def generate(instruction, input=None):
         generation_config=GenerationConfig(temperature=0.2, top_p=0.75, num_beams=4),
         return_dict_in_generate=True,
         output_scores=True,
-        max_new_tokens=512
+        max_new_tokens=216
     )
     for seq in generation_output.sequences:
         output = tokenizer.decode(seq)
         print(output.split("### Response:")[1].strip())
 
-generate("What is mining?")
+generate("What is reclamation in mining")
 
+#Reclamation in mining refers to the process of restoring land that has been disturbed by mining activities to its original state or better. It involves restoring the topography, vegetation, and ecosystems that were affected by the mining operations, and returning the land to its pre-mining condition or an even better state. ⁇ 
+
+#Reclamation is an important part of the mining process, as it ensures that the land can be used for other purposes after the mining operations have been completed. It also helps to minimize the environmental impact of mining, by restoring the land to its natural state and preventing erosion and contamination of water sources. ⁇ 
+
+#Reclamation techniques vary depending on the type of mining and the type of land that has been disturbed. For example, in open-pit mining, reclamation involves removing the overburden and restoring the land to its original contours. In underground mining, reclamation involves sealing the mine
 ```
 
 
