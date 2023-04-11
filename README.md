@@ -2,6 +2,7 @@
 license: gpl-3.0
 ---
 
+# See [Hugging Face repo for files](https://huggingface.co/Yairama/alpaca-miner)
 
 ## Trying to make a Fine tuning of alpaca using a mining dataset.
 
